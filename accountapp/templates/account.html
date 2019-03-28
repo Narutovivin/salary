@@ -1,0 +1,28 @@
+<html>
+<head><title>phone</title></head>
+<body bgcolor="blue">
+<center>
+<table border =2
+<td>
+<th>id</th>
+<th>name</th>
+<th>accountno</th>
+<th>phoneno</th>
+<th>doj</th>
+<th>email</th>
+</td>
+<h1>salary</h1>
+
+{% for i in rec %}
+<tr>
+<td>{{i.eid}}</td>
+<td>{{i.ename}}</td>
+<td>{{i.eaccountno}}</td>
+<td>{{i.ephoneno}}</td>
+<td>{{i.doj}}</td>
+<td>{{i.email}}</td>
+{% endfor %}
+</tr>
+</table>
+</body>
+</html>
